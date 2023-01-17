@@ -1,0 +1,26 @@
+@keyframes anim {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: 30px 50px 200px 100px;
+  padding: 7px;
+  transform-origin: top;
+}
+
+.scoreboard > div {
+  text-align: left;
+  margin-left: 20px;
+  animation: anim .7s linear;
+}
+
+.scoreboard img {
+  width: 36px;
+  border-radius: 50%;
+}
